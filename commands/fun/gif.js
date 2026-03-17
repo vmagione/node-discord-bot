@@ -13,3 +13,11 @@ const data = new SlashCommandBuilder()
                 { name: 'Movie', value: 'gif_movie' },
             ),
     );
+
+module.exports = {
+    cooldown: 5,
+    data: data,
+    async execute(interaction) {
+        await interaction.reply('Gif!');
+    },
+};

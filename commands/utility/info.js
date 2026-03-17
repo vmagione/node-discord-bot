@@ -10,3 +10,11 @@ const data = new SlashCommandBuilder()
             .addUserOption((option) => option.setName('target').setDescription('The user')),
     )
     .addSubcommand((subcommand) => subcommand.setName('server').setDescription('Info about the server'));
+
+module.exports = {
+    cooldown: 5,
+    data: data,
+    async execute(interaction) {
+        await interaction.reply('Info!');
+    },
+};

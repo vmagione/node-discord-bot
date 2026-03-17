@@ -137,3 +137,4 @@ dist
 
 HowTo.txt
 config.json
+.env
